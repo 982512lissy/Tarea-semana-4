@@ -2,14 +2,14 @@ import pandas as pd
 ## adquisiscion de los datos #####
 partido = pd.read_csv("https://raw.githubusercontent.com/cienciadedatos/datos-de-miercoles/master/datos/2019/2019-04-10/partidos.txt",delimiter='\t')
 partido
-partido_comparar=partido[(partido.
+partido_comparar=partido[(partido.equipo_1=="Alemania")| (partido.equipo_1=="Rusia")]
+partido_comparar
 ##### eleccióon  de los paises #########
 alemania=partido_comparar[(partido_comparar.equipo_1=="Alemania")]
 rusia =partido_comparar[(partido_comparar.equipo_1=="Rusia")]
-#### media de goles de los paises #######
+### media de goles de los paises #####3
 media1= alemania['equipo_1_final'].mean()
-media1equipo_1=="Alemania")| (partido.equipo_1=="Rusia")]
-partido_comparar
+media1
 media2=rusia['equipo_1_final'].mean()
 media2
 tabla ={"paises":["Alemania","Rusia"],
